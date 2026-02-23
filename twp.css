@@ -134,8 +134,11 @@ a:hover {
 	text-decoration: none;
 }
 
-a:hover {
-	
+a {
+ display:box;
+ background-color: #e9b44c;
+ color: #000000;
+ text-decoration: none;
 }
 
 
@@ -153,6 +156,7 @@ td, th {
 .pagenav-link {
 	text-decoration: none;
 }
+
 
 
 
