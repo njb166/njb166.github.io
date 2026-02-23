@@ -33,12 +33,13 @@ body {
   text-align: center;
   padding: 17px 16px;
   text-decoration: none;
+  background-color: #00693C;
 }
 
 /* Change color on hover */
 .site-header a:hover {
-  background-color: #ddd;
-  color: black;
+  background-color: #e9b44c;
+  color: #00693C;
 }
 .logo-container {
 	display: flex;
@@ -156,6 +157,7 @@ td, th {
 .pagenav-link {
 	text-decoration: none;
 }
+
 
 
 
