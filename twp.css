@@ -20,16 +20,18 @@ body {
 /* Style the top navigation bar */
 .site-header {
   overflow: hidden;
-  background-color: #333;
+  background-color: #00693C;
+  margin: 0px;
+  padding: 0px;
 }
 
 /* Style the topnav links */
 .site-header a {
   float: left;
   display: block;
-  color: #f2f2f2;
+  color: #FFFFF1;
   text-align: center;
-  padding: 14px 16px;
+  padding: 17px 16px;
   text-decoration: none;
 }
 
@@ -38,11 +40,28 @@ body {
   background-color: #ddd;
   color: black;
 }
+.logo-container {
+	display: flex;
+	float: left;
+    flex-direction:; /* Stacks children vertically (icon on top of text) */
+    align-items: center; /* Centers the icon and text horizontally within the container */
+  	text-decoration: none; /* If you wrap in an anchor tag */
+	justify-content: center;
+	min-height: 100%;
+	padding: 0px 10px;
+	color: #e9b44c;
+}
+.site-name{
+	font-size: 24px;
+}
+.logo-container i{
+	margin: 10px;
+}
 
 /* Style the top navigation bar */
 .page-header {
   overflow: hidden;
-  background-color: #333;
+  background-color: #00693c;
 }
 
 /* Style the topnav links */
@@ -51,7 +70,7 @@ body {
   display: block;
   color: #f2f2f2;
   text-align: center;
-  padding: 14px 16px;
+  padding: 4px 19px;
   text-decoration: none;
 }
 
@@ -90,18 +109,18 @@ body {
 }
 body {
     margin: 0;
+	background-color: #826251;
    
-
+}
 .wrapper {
 	width:1000px;
 	padding: 20px 40px;
 	margin: auto;
-	border: ;
-	background-color: white;
+	background-color: #91c7b1;
 }
 
 h1 {
-	 
+	color: 
 }
 
 h2 {
@@ -126,7 +145,10 @@ th {
   padding: 8px;
 }
 
-
+table i{
+	color: red;
+	font-size: 48px;
+}
 
 
 
