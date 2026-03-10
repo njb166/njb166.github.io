@@ -23,10 +23,11 @@ body {
   background-color: #00693C;
   margin: 0px;
   padding: 0px;
+  width: 100%;
 }
 
 /* Style the topnav links */
-.site-header a {
+.sitenav a {
   float: left;
   display: block;
   color: #FFFFF1;
@@ -37,7 +38,7 @@ body {
 }
 
 /* Change color on hover */
-.site-header a:hover {
+.sitenav a:hover {
   background-color: #e9b44c;
   color: #00693C;
 }
@@ -49,7 +50,18 @@ body {
   	text-decoration: none; /* If you wrap in an anchor tag */
 	justify-content: center;
 	min-height: 100%;
-	padding: 0px 10px;
+	padding: 10px 10px 0px 10px;
+	color: #e9b44c;
+}
+.logo-index {
+	display: flex;
+	float: center;
+    /* Stacks children vertically (icon on top of text) */
+    align-items: center; /* Centers the icon and text horizontally within the container */
+  	text-decoration: none; /* If you wrap in an anchor tag */
+	justify-content: center;
+	min-height: 100%;
+	padding: 10px 10px 10px 10px;
 	color: #e9b44c;
 }
 .site-name{
@@ -62,25 +74,25 @@ body {
 /* Style the top navigation bar */
 .page-header {
   overflow: hidden;
-  background-color: #00693c;
+  background-color: #7FD1B9;
+  color: #00693c
+  
 }
 
 /* Style the topnav links */
 .page-header a {
-  float: left;
-  display: block;
-  color: #f2f2f2;
-  text-align: center;
-  padding: 4px 19px;
+  float: ;
+  display: ;
+  color: #000000;
+  text-align: ;
+  padding: ;
   text-decoration: none;
-  background-color: #00693C;
+  background-color: ;
+	
 }
 
 /* Change color on hover */
-.page-header a:hover {
-  background-color: #e9b44c;
-  color: #00693C;
-}
+
 
 /* gallery grid CSS */
         
@@ -102,6 +114,7 @@ body {
         .gallery-item p {
             margin: .25em 0;
             line-height: 135%;
+			
         }
 
 /* Style the footer */
@@ -122,42 +135,59 @@ body {
 }
 
 h1 {
-	color: 
+	
 }
 
 h2 {
-	color:;
+
 }
 
-a:hover {
+.wrapper a:hover {
 	display: box;
 	background-color: #7fd1b9;
 	color: #000000;
 	text-decoration: none;
 }
 
-a {
- display:box;
- background-color: #e9b44c;
- color: #000000;
- text-decoration: none;
+.wrapper p a {
+ /* display:box; */
+ /* background-color: #e9b44c; */
+ color: #00693C;
 }
-
+.wrapper li a {
+ color: #00693C;
+}
 
 table {
   border-collapse: collapse;
+	width: 100%;
 }
 td, th {
   border: 1px solid black;
   padding: 8px;
-  text-align: center;
+  text-align: left;
 }
 
 
 
-.pagenav-link {
-	text-decoration: none;
+.lead-display {
+	width: 900px;
+	height: 675px;
+	background-image: url("images/twp-lead-image.jpg");
+	position: relative;
 }
+
+.lead-display h1{
+	background:red;
+	font-size: 3em;
+	width: 100%;
+	padding: 1em 0;
+	margin: 0;
+	position: absolute;
+	bottom: 5px;
+	left: 0;
+}
+
 
 
 
