@@ -45,7 +45,7 @@ body {
 .logo-container {
 	display: flex;
 	float: left;
-    flex-direction:; /* Stacks children vertically (icon on top of text) */
+    
     align-items: center; /* Centers the icon and text horizontally within the container */
   	text-decoration: none; /* If you wrap in an anchor tag */
 	justify-content: center;
@@ -81,14 +81,18 @@ body {
 
 /* Style the topnav links */
 .page-header a {
-  float: ;
-  display: ;
+  
   color: #000000;
-  text-align: ;
-  padding: ;
+  
   text-decoration: none;
-  background-color: ;
-	
+ 
+}
+.page-header a:hover {
+  
+  color: #000000;
+  
+  text-decoration: none;
+  background-color: #e9b44c;
 }
 
 /* Change color on hover */
@@ -106,7 +110,7 @@ body {
         }
                         
         .gallery-item {
-            width: 200px; /*should match the width of your images + width of border (if any) */
+            width: 300px; /*should match the width of your images + width of border (if any) */
             text-align: center;
         } 
         
@@ -188,10 +192,32 @@ td, th {
 	left: 0;
 }
 
+.profile {
+	 display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top:30px;
+  margin-bottom:30px
+  
+}
+
+.container {
+  display: flex; /* Aligns child items horizontally by default */
+  align-items: center; /* Vertically centers items within the container */
+  gap: 1rem; /* Adds space between the image and the text */
+}
+
+.container img {
+  width: 200px; /* Adjust image size as needed */
+  height: auto;
+}
 
 
 
 
 
 
-
+.logo {
+}
+.profile {
+}
