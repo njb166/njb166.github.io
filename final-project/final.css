@@ -1,0 +1,17 @@
+@charset "utf-8";
+/* CSS Document */
+.left-column {
+  float: left;
+  width: 75%;
+}
+.right-column {
+  float: right;
+  width: 25%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
