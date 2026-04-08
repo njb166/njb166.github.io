@@ -1,17 +1,242 @@
 @charset "utf-8";
 /* CSS Document */
-.left-column {
-  float: left;
-  width: 75%;
-}
-.right-column {
-  float: right;
-  width: 25%;
+
+body {
+	margin: 0;
+	padding: 0;
+	color: #2a2a2a;
+	background: #ffffff;
+	font-size: 20px;
+	line-height: 1.5em;
+	font-family: helvetica, verdana, sans-serif;
 }
 
-/* Clear floats after the columns */
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
+.wrapper {
+	width: 1040px;
+	padding: 0;
+	margin: 0 auto;
+	border: 0px red solid;
+	background: #ffffff;
+}
+
+main {
+	padding: 0 2em;
+}
+
+header.site-header, footer.site-footer {
+	padding: 0 2em;
+	background: #bb3456;
+	color: #ffffff;
+}
+
+footer.site-footer {
+	padding: 1em 2em;
+}
+
+/* basic styling for headings */
+
+h1 {
+	color: #bb3456;;
+	font-size: 48px;
+	line-height: 150%;
+	text-align: center;
+}
+
+h1 span {
+	font-style: normal;
+}
+
+h1 span em {
+	color: red;
+	font-style: normal;
+}
+
+h2 {color: green;}
+
+/* basic styling for in-text links */
+
+a {
+	color:chocolate;
+}
+
+a:hover {
+	color:aqua;
+}
+
+/* CSS for the Site Header */
+
+/* a simple grid layout for the site header; creates a two-column grid with the
+extra space placed between the two columns so that the logo is all the way on the
+left and the site nav all the way on the right */
+
+header.site-header {
+	display: grid;
+	grid-template-columns: auto auto;
+	justify-content: space-between;
+	margin: 0 0 2em;
+}
+
+.site-logo {
+	display: block;
+	height: 60px;
+	padding: 8px 0 8px;
+	box-sizing: border-box;
+}
+
+.site-logo-image {
+	height: 100%;
+}
+
+nav.sitenav {
+	padding: 0;
+	line-height: 60px;
+}
+
+nav.sitenav a {
+	display: inline-block; /* should help match the height of anchor element with
+	that of the nav element -- for the color reverse hover effect */
+	vertical-align: middle;
+	color: #fff;
+	font-weight: bold;
+	font-size: 110%;
+	text-decoration: none;
+	padding: 0 6px;
+}
+
+nav.sitenav a:hover {
+	color: violet;
+}
+
+/* CSS for the Page Header */
+
+header.page-header {
+	margin: 0 0 2em;
+}
+
+nav.pagenav a {
+	text-decoration: none;
+}
+
+a.pagenav-link {
+	text-decoration: none;
+}
+
+/* Reviews Page CSS */
+
+/* WRAPPER GRID CSS */
+
+.wrapper-grid {
+	display: grid;
+	gap: 0.5em 0.5em;
+	grid-template-columns: repeat(6,1fr);
+	grid-template-rows: auto auto auto;
+	grid-template-areas:
+	"header header header header header header"
+	"main main main main aside aside"
+	"footer footer footer footer footer footer";
+}
+
+.wrapper-grid .site-header {
+	grid-area: header;
+}
+
+.wrapper-grid .micro-reviews {
+	grid-area: aside;
+	font-size: 16px;
+	line-height: 1.5;
+	padding-top: 1.5em; /* matches page-header padding-top; */
+	padding-right: 2.5em; /* = 40px */
+}
+
+.wrapper-grid main {
+	grid-area: main;
+	padding: 0 2em 0 2.5em;
+}
+
+.wrapper-grid .site-footer {
+	grid-area: footer;
+}
+
+/* ARTICLE GRID CSS */
+
+.article-grid {
+	display: grid;
+	gap: 0.5em 0.5em;
+	grid-template-columns: repeat(6,1);
+	grid-template-rows: repeat(4,auto);
+	grid-template-areas:
+	"rheader rheader rheader rheader rheader rheader"
+	"rlead rlead rlead rlead rlead rlead"
+	"rtext rtext rtext rtext raside raside"
+	"rfooter rfooter rfooter rfooter raside raside"
+}
+
+.article-grid .review-header {
+	grid-area: rheader;
+}
+
+.article-grid .review-lead {
+	grid-area: rlead;
+}
+
+.article-grid .review-text {
+	grid-area: rtext;
+}
+
+.article-grid .review-aside{
+	grid-area: raside;
+	border:solid;
+	border-color:green;
+	margin:10px;
+	padding:10px;
+}
+
+.article-grid .review-footer {
+	grid-area: rfooter;
+	font-family: "Courier New", monospace;
+}
+
+.article-grid .micro-reviews {
+	grid-area: aside;
+	font-size: 16px;
+	line-height: 1.5;
+	padding-top: 1.5em; /* matches page-header padding-top; */
+	padding-right: 2.5em; /* = 40px */
+}
+
+/* Other Reviews CSS */
+
+.article-label {
+	color: #9a9a9a;
+}
+
+.micro-reviews h1 {
+	font-size: 2em;
+	text-align: left;
+	color: green;
+	margin: 0 0 1em;
+}
+
+.micro-reviews h2 {
+	font-size: 1.5em;
+	color: magenta;
+	margin: 0;
+}
+
+main article {
+	padding: 0 0 2em;
+}
+
+main article h1 {
+	font-size: 2em;
+	margin: 0 0 1em;
+	color: #3a3a3a;
+}
+
+article figure {
+	margin: 0;
+}
+
+.article-lead-image img {
+	width: 100%;
 }
