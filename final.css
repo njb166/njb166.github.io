@@ -5,7 +5,7 @@ body {
 	margin: 0;
 	padding: 0;
 	color: #2a2a2a;
-	background: #ffffff;
+	background: green;
 	font-size: 20px;
 	line-height: 1.5em;
 	font-family: helvetica, verdana, sans-serif;
@@ -13,7 +13,7 @@ body {
 
 .wrapper {
 	width: 1040px;
-	padding: 0;
+	padding: 20px;
 	margin: 0 auto;
 	border: 0px red solid;
 	background: #ffffff;
@@ -22,13 +22,13 @@ body {
 main {
 	padding: 0 2em;
 }
-
+/*
 header.site-header, footer.site-footer {
 	padding: 0 2em;
 	background: #bb3456;
 	color: #ffffff;
 }
-
+*/
 footer.site-footer {
 	padding: 1em 2em;
 }
@@ -68,14 +68,14 @@ a:hover {
 /* a simple grid layout for the site header; creates a two-column grid with the
 extra space placed between the two columns so that the logo is all the way on the
 left and the site nav all the way on the right */
-
+/*
 header.site-header {
 	display: grid;
 	grid-template-columns: auto auto;
 	justify-content: space-between;
 	margin: 0 0 2em;
 }
-
+*/
 .site-logo {
 	display: block;
 	height: 60px;
@@ -86,7 +86,7 @@ header.site-header {
 .site-logo-image {
 	height: 100%;
 }
-
+/*
 nav.sitenav {
 	padding: 0;
 	line-height: 60px;
@@ -103,10 +103,11 @@ nav.sitenav a {
 	padding: 0 6px;
 }
 
+
 nav.sitenav a:hover {
 	color: violet;
 }
-
+*/
 /* CSS for the Page Header */
 
 header.page-header {
@@ -240,3 +241,81 @@ article figure {
 .article-lead-image img {
 	width: 100%;
 }
+    
+.gallery-grid {
+            display: grid;
+            grid-template-columns: auto auto auto;
+            grid-row-gap: 100px ;
+            justify-items: center;
+            align-items: start;
+            justify-content: space-between;
+        }
+                        
+       
+.gallery-item {
+            width: 300px; /*should match the width of your images + width of border (if any) */
+            text-align: center;
+        } 
+/* Style the top navigation bar */
+.site-header {
+  overflow: hidden;
+  background-color: #00693C;
+  margin: 0px;
+  padding: 0px;
+  width: 100%;
+}
+
+/* Style the topnav links */
+.sitenav a {
+  float: left;
+  display: block;
+  color: #FFFFF1;
+  text-align: center;
+  padding: 17px 16px;
+  text-decoration: none;
+  background-color: #00693C;
+}
+
+/* Change color on hover */
+.sitenav a:hover {
+  background-color: #e9b44c;
+  color: #00693C;
+}
+.logo-container {
+	display: flex;
+	float: left;
+    
+    align-items: center; /* Centers the icon and text horizontally within the container */
+  	text-decoration: none; /* If you wrap in an anchor tag */
+	justify-content: center;
+	min-height: 100%;
+	padding: 10px 10px 0px 10px;
+	color: #e9b44c;
+}
+.logo-index {
+	display: flex;
+	float: center;
+    /* Stacks children vertically (icon on top of text) */
+    align-items: center; /* Centers the icon and text horizontally within the container */
+  	text-decoration: none; /* If you wrap in an anchor tag */
+	justify-content: center;
+	min-height: 100%;
+	padding: 10px 10px 10px 10px;
+	color: #e9b44c;
+}
+.site-name{
+	font-size: 24px;
+}
+.logo-container i{
+	margin: 10px;
+}
+.container {
+  display: flex; /* Aligns child items horizontally by default */
+  align-items: center; /* Vertically centers items within the container */
+  gap: 1rem; /* Adds space between the image and the text */
+}
+
+.container img {
+  width: 200px; /* Adjust image size as needed */
+  height: auto;
+
