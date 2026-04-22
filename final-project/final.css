@@ -318,4 +318,17 @@ article figure {
 .container img {
   width: 200px; /* Adjust image size as needed */
   height: auto;
+}
+	
+.worldmap {
+	width: 1000px;
+	height: 271px;
+	border: solid #5a5a5a 1px;
+	background: url(images/j-map.jpg) no-repeat;
+	background-size: 1000px 271px;
+	padding: 0;
+	margin: 0; /* adjust as needed */
+	position: relative; /* needed for positioning the icons */
+}
+
 
