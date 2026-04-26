@@ -309,6 +309,7 @@ article figure {
 .logo-container i{
 	margin: 10px;
 }
+
 .container {
   display: flex; /* Aligns child items horizontally by default */
   align-items: center; /* Vertically centers items within the container */
@@ -330,5 +331,60 @@ article figure {
 	margin: 0; /* adjust as needed */
 	position: relative; /* needed for positioning the icons */
 }
+
+.worldmap-item {
+	height: 24px;
+	position: absolute;
+	}
+#worldmap-item-bridge {
+	top: 110px;
+	left: 210px;
+	}
+#worldmap-item-river {
+	top: 230px;
+	left: 710px;
+	}
+#worldmap-item-bar {
+	top: 110px;
+	left: 474px;
+	}
+#worldmap-item-restroom {
+	top: 170px;
+	left: 720px;
+	}
+#worldmap-item-grill {
+	top: 110px;
+	left: 740px;
+	}
+#worldmap-item-pavilion {
+	top: 140px;
+	left: 750px;
+	}
+#worldmap-item-gazebo {
+	top: 160px;
+	left: 590px;
+	}
+#worldmap-item-barrel {
+	top: 110px;
+	left: 240px;
+	}
+#worldmap-item-bike {
+	top: 120px;
+	left: 440px;
+	}
+
+    .worldmap-item span {
+      font-size: 10px; 
+      color: #f32196; 
+      float: right; 
+      background: #efecb4; 
+      padding: 3px; 
+      margin-left: 3px;
+      display: none;
+      }
+      
+    .worldmap-item:hover span {
+      display: inline;
+      }
 
 
