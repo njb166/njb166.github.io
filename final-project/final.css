@@ -107,7 +107,7 @@ nav.sitenav a {
 nav.sitenav a:hover {
 	color: violet;
 }
-*/
+
 /* CSS for the Page Header */
 
 header.page-header {
@@ -385,5 +385,43 @@ article figure {
     .worldmap-item:hover span {
       display: inline;
       }
+
+/* === HOME PAGE CSS === */
+
+.wrapper-home {
+	width: 1040px;
+	padding: 0px;
+	margin: 0 auto;
+	background: #ffffff;
+}
+/* showcase section using grid CSS */
+
+.showcase-grid {
+	display: grid;
+	grid-template-columns: auto auto auto;
+	grid-row-gap: 20px ;
+	justify-items: center;
+	align-items: start;
+	justify-content:space-between;
+}
+.showcase-item {
+	width: 300px; /*should match the width of your images + width of
+	border (if any) */
+	text-align: center;
+}
+/* css for styling the p/caption under the image */
+.showcase-item p {
+	margin: .25em 0;
+	line-height: 135%;
+	font-size: 90%;
+}
+.showcase-item p a {
+	color: yellowgreen;
+	text-decoration: none;
+}
+.showcase-item p a:hover {
+	color: #bb3456;
+}
+
 
 
